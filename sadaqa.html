@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>| صدقة جارية - روح أحمد محمد طاهر الليثي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, #FDF8E7 0%, #F5EFDC 100%);
+            min-height: 100vh;
+        }
+
+        .islamic-border-top {
+            background: linear-gradient(90deg, #6AA84F, #D4AF37, #4A90E2, #6AA84F);
+            height: 6px;
+        }
+        .islamic-pattern {
+            background: repeating-linear-gradient(45deg, #6AA84F22, #6AA84F22 20px, #FDF8E7 20px, #FDF8E7 40px);
+            height: 30px;
+        }
+
+        .container { max-width: 1300px; margin: 0 auto; padding: 20px; }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(135deg, #fff5e6, #f0e8d8);
+            border-radius: 50px;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            border: 2px solid #D4AF37;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(135deg, #6AA84F, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero h2 { color: #5a3e2b; margin: 10px 0; }
+        .dua-hero {
+            background: linear-gradient(135deg, rgba(106,168,79,0.1), rgba(212,175,55,0.1));
+            padding: 20px;
+            border-radius: 40px;
+            margin-top: 20px;
+            border-right: 4px solid #6AA84F;
+            border-left: 4px solid #D4AF37;
+            line-height: 2;
+        }
+
+        .section {
+            background: white;
+            border-radius: 30px;
+            margin-bottom: 35px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            border: 1px solid #e8dcc8;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 3px solid #D4AF37;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+        }
+        .section-title i { font-size: 1.8rem; color: #6AA84F; }
+        .section-title h2 { font-size: 1.6rem; color: #5a3e2b; }
+
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 25px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; }
+
+        .card {
+            background: #fffef8;
+            border-radius: 20px;
+            padding: 22px;
+            transition: 0.2s;
+            border: 1px solid #e8dcc8;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: #D4AF37;
+            box-shadow: 0 5px 15px rgba(212,175,55,0.2);
+        }
+        .card h3 { color: #6AA84F; margin-bottom: 12px; }
+
+        .dua-ornament {
+            background: linear-gradient(135deg, #fef8e8, #fff4e0);
+            border-radius: 25px;
+            padding: 22px 35px;
+            margin: 30px 0;
+            text-align: center;
+            position: relative;
+            border: 1px solid #D4AF37;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .dua-ornament::before {
+            content: "﴿";
+            position: absolute;
+            right: 20px;
+            top: -10px;
+            font-size: 30px;
+            color: #D4AF37;
+        }
+        .dua-ornament::after {
+            content: "﴾";
+            position: absolute;
+            left: 20px;
+            bottom: -10px;
+            font-size: 30px;
+            color: #D4AF37;
+        }
+        .dua-ornament i { font-size: 1.5rem; color: #6AA84F; margin-left: 10px; }
+        .dua-ornament .dua-text { font-size: 1.05rem; color: #5a3e2b; line-height: 2; }
+
+        .dua-banner {
+            background: linear-gradient(135deg, #1a3a1a, #2d5a2d);
+            border-radius: 25px;
+            padding: 28px 35px;
+            margin: 30px 0;
+            text-align: center;
+            border: 2px solid #D4AF37;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .dua-banner .dua-text {
+            font-size: 1.1rem;
+            color: #f5e6b0;
+            line-height: 2.2;
+        }
+        .dua-banner strong { color: #D4AF37; }
+
+        .tasbeeh-horizontal {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 16px;
+            margin: 25px 0;
+        }
+        .tasbeeh-rect {
+            background: linear-gradient(135deg, #D4AF37, #B8860B);
+            border-radius: 20px;
+            padding: 18px 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.1s;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 1px solid #F5D742;
+            user-select: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            aspect-ratio: 1 / 1.1;
+        }
+        .tasbeeh-rect:active { transform: scale(0.96); }
+        .tasbeeh-rect .dhikr-name { font-size: 1rem; font-weight: bold; margin-bottom: 10px; line-height: 1.4; }
+        .tasbeeh-rect .count-number { font-size: 2.2rem; font-weight: bold; }
+        .tasbeeh-rect .remaining-text { font-size: 0.75rem; margin-top: 8px; opacity: 0.85; }
+
+        .youtube-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin: 20px 0;
+        }
+        .youtube-card {
+            background: #1a1a2e;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .youtube-card:hover { transform: translateY(-5px); }
+        .youtube-card p {
+            background: #16213e;
+            color: #D4AF37;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .quran-text {
+            background: #f9f6e8;
+            padding: 15px;
+            border-radius: 15px;
+            line-height: 2.2;
+            border-right: 3px solid #D4AF37;
+            margin: 10px 0;
+            font-size: 1.1rem;
+            color: #3a2a1a;
+        }
+
+        .fatiha-inline {
+            background: #f9f6e8;
+            padding: 20px 22px;
+            border-radius: 15px;
+            border-right: 3px solid #D4AF37;
+            margin: 10px 0;
+            font-size: 1.15rem;
+            color: #3a2a1a;
+            line-height: 2.5;
+        }
+        .fatiha-inline .bismillah {
+            display: block;
+            text-align: center;
+            color: #6AA84F;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 4px;
+        }
+        .verse-marker {
+            display: inline-block;
+            background: #D4AF37;
+            color: white;
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            text-align: center;
+            line-height: 26px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin: 0 4px;
+            vertical-align: middle;
+        }
+
+        .gallery-free {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .gallery-free-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .gallery-free-item .img-label {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #5a3e2b;
+            text-align: center;
+            font-family: 'Tajawal', sans-serif;
+        }
+        .gallery-free-item img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        .gallery-free-item .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 22px;
+            border-radius: 40px;
+            border: none;
+            background: #6AA84F;
+            color: white;
+            cursor: pointer;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .gallery-free-item .btn-download:hover { opacity: 0.85; transform: scale(0.98); }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            border-radius: 40px;
+            border: none;
+            background: #e8e0cf;
+            cursor: pointer;
+            font-family: 'Tajawal';
+            font-size: 0.95rem;
+            margin: 5px;
+            transition: 0.2s;
+        }
+        .btn:hover { opacity: 0.88; transform: scale(0.98); }
+        .btn-primary { background: #6AA84F; color: white; }
+        .btn-blue { background: #4A90E2; color: white; }
+        .btn-gold { background: #D4AF37; color: #2c3e2b; }
+        .reset-btn-container { text-align: center; margin-top: 25px; }
+
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #6AA84F;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 40px;
+            z-index: 1000;
+            animation: fadeOut 2.5s forwards;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            max-width: 320px;
+            text-align: center;
+            line-height: 1.6;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1; transform: translateY(0); }
+            70% { opacity: 1; }
+            100% { opacity: 0; visibility: hidden; transform: translateY(20px); }
+        }
+
+        .hadith-card {
+            background: linear-gradient(135deg, #f5f0e8, #fff8ee);
+            border-radius: 20px;
+            padding: 22px;
+            border: 1px solid #e8dcc8;
+            border-right: 5px solid #6AA84F;
+            transition: 0.2s;
+        }
+        .hadith-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(212,175,55,0.2);
+        }
+        .hadith-card h3 { color: #6AA84F; margin-bottom: 12px; font-size: 1.05rem; }
+        .hadith-text {
+            font-size: 1.05rem;
+            color: #3a2a1a;
+            line-height: 2.2;
+            background: white;
+            padding: 14px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .hadith-source { color: #888; font-size: 0.82rem; }
+
+        .salah-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .salah-card {
+            background: linear-gradient(135deg, #1a3a1a, #2a5a2a);
+            border-radius: 18px;
+            padding: 20px;
+            color: #f5e6b0;
+            border: 1px solid #D4AF37;
+            text-align: center;
+        }
+        .salah-card h3 { color: #D4AF37; margin-bottom: 10px; font-size: 1.1rem; }
+        .salah-card p { line-height: 2.1; font-size: 1rem; }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(106,168,79,0.1), rgba(212,175,55,0.1));
+            border-radius: 30px;
+            margin-top: 40px;
+            line-height: 2;
+            color: #5a3e2b;
+        }
+
+        @media (max-width: 700px) {
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            .youtube-grid { grid-template-columns: 1fr; }
+            .tasbeeh-horizontal { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
+            .tasbeeh-rect .dhikr-name { font-size: 0.85rem; }
+            .tasbeeh-rect .count-number { font-size: 1.7rem; }
+            .hero h1 { font-size: 1.6rem; }
+        }
+        @media (max-width: 500px) {
+            .container { padding: 12px; }
+            .section { padding: 18px; border-radius: 20px; }
+        }
+    </style>
+</head>
+<body>
+<div class="islamic-border-top"></div>
+<div class="islamic-pattern"></div>
+
+<div class="container">
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1><i class="fas fa-tree"></i><i class="fas fa-hand-holding-heart"></i></h1>
+        <h2>صدقة جارية على روح المرحوم</h2>
+        <h2 style="color: #D4AF37; font-size: 1.8rem;">أحمد محمد طاهر أحمد الليثي</h2>
+        <div class="dua-hero">
+            <i class="fas fa-praying-hands"></i> اللهم اجعل هذا العمل صدقة جارية على روح المرحوم أحمد محمد طاهر أحمد الليثي<br>
+            اللهم اغفر له وارحمه، واعف عنه وأكرم نزله، وأدخله فسيح جناتك<br>
+            <strong style="color:#6AA84F;">﴿ اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ ﴾</strong>
+        </div>
+        <div style="margin-top: 20px;">
+            <button class="btn btn-primary" onclick="shareSite()"><i class="fab fa-whatsapp"></i> مشاركة الموقع</button>
+            <button class="btn btn-blue" onclick="copyLink()"><i class="fas fa-link"></i> نسخ الرابط</button>
+        </div>
+    </div>
+
+    <!-- Ornament 1 -->
+    <div class="dua-ornament">
+        <i class="fas fa-praying-hands"></i>
+        <div class="dua-text">
+            <strong>اللهم ارحمه واغفر له</strong> — اللهم اجعل قبره روضة من رياض الجنة، ولا تجعله حفرة من حفر النار، اللهم افسح له في قبره مد بصره<br>
+            <em style="color:#6AA84F; font-size:0.95rem;">اللهم صلِّ وسلم على نبينا محمد وعلى آله وصحبه أجمعين</em>
+        </div>
+    </div>
+
+    <!-- ========== 1. القرآن الكريم ========== -->
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-quran"></i>
+            <h2>القرآن الكريم - هدية للمرحوم أحمد الليثي</h2>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3><i class="fas fa-star-of-life"></i> سورة الفاتحة</h3>
+                <div class="fatiha-inline">
+                    <span class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+                    الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ <span class="verse-marker">١</span> الرَّحْمَٰنِ الرَّحِيمِ <span class="verse-marker">٢</span> مَالِكِ يَوْمِ الدِّينِ <span class="verse-marker">٣</span> إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ <span class="verse-marker">٤</span> اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ <span class="verse-marker">٥</span> صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ <span class="verse-marker">٦</span> غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ <span class="verse-marker">٧</span>
+                </div>
+                <button class="btn btn-gold" style="margin-top:12px;" onclick="copyText('بسم الله الرحمن الرحيم - الحمد لله رب العالمين - الرحمن الرحيم - مالك يوم الدين - إياك نعبد وإياك نستعين - اهدنا الصراط المستقيم - صراط الذين أنعمت عليهم غير المغضوب عليهم ولا الضالين')"><i class="fas fa-copy"></i> نسخ السورة</button>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-throne"></i> آية الكرسي — البقرة: ٢٥٥</h3>
+                <div class="quran-text">
+                    اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ
+                </div>
+                <p style="color:#888; font-size:0.8rem; margin-top:8px;">سورة البقرة، الآية ٢٥٥</p>
+                <button class="btn btn-gold" style="margin-top:8px;" onclick="copyText('آية الكرسي: الله لا إله إلا هو الحي القيوم لا تأخذه سنة ولا نوم...')"><i class="fas fa-copy"></i> نسخ</button>
+            </div>
+        </div>
+
+        <div class="grid-2" style="margin-top: 25px;">
+            <div class="card">
+                <h3><i class="fas fa-moon"></i> سورة الإخلاص</h3>
+                <div class="quran-text">
+                    بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ<br>
+                    قُلْ هُوَ اللَّهُ أَحَدٌ <span class="verse-marker">١</span> اللَّهُ الصَّمَدُ <span class="verse-marker">٢</span> لَمْ يَلِدْ وَلَمْ يُولَدْ <span class="verse-marker">٣</span> وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ <span class="verse-marker">٤</span>
+                </div>
+                <button class="btn btn-gold" onclick="copyText('قل هو الله أحد الله الصمد لم يلد ولم يولد ولم يكن له كفوا أحد')"><i class="fas fa-copy"></i> نسخ</button>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-shield-alt"></i> سورة الفلق</h3>
+                <div class="quran-text">
+                    بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ<br>
+                    قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ <span class="verse-marker">١</span> مِن شَرِّ مَا خَلَقَ <span class="verse-marker">٢</span> وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ <span class="verse-marker">٣</span> وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ <span class="verse-marker">٤</span> وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ <span class="verse-marker">٥</span>
+                </div>
+                <button class="btn btn-gold" onclick="copyText('قل أعوذ برب الفلق من شر ما خلق...')"><i class="fas fa-copy"></i> نسخ</button>
+            </div>
+        </div>
+
+        <div class="grid-2" style="margin-top: 25px;">
+            <div class="card">
+                <h3><i class="fas fa-mosque"></i> ﴿ آية عن الصالحين ﴾</h3>
+                <div class="quran-text">﴿ وَالَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَنُبَوِّئَنَّهُم مِّنَ الْجَنَّةِ غُرَفًا تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا ﴾</div>
+                <p style="color:#888; font-size:0.8rem; margin-top:6px;">العنكبوت: ٥٨</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-dove"></i> ﴿ آية عن النفس المطمئنة ﴾</h3>
+                <div class="quran-text">﴿ يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ * ارْجِعِي إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً * فَادْخُلِي فِي عِبَادِي * وَادْخُلِي جَنَّتِي ﴾</div>
+                <p style="color:#888; font-size:0.8rem; margin-top:6px;">الفجر: ٢٧–٣٠</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-tree"></i> ﴿ آية عن الذين يبتغون الآخرة ﴾</h3>
+                <div class="quran-text">﴿ وَمَنْ أَرَادَ الْآخِرَةَ وَسَعَىٰ لَهَا سَعْيَهَا وَهُوَ مُؤْمِنٌ فَأُولَٰئِكَ كَانَ سَعْيُهُم مَّشْكُورًا ﴾</div>
+                <p style="color:#888; font-size:0.8rem; margin-top:6px;">الإسراء: ١٩</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-star"></i> ﴿ آية عن جنات الفردوس ﴾</h3>
+                <div class="quran-text">﴿ إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ كَانَتْ لَهُمْ جَنَّاتُ الْفِرْدَوْسِ نُزُلًا ﴾</div>
+                <p style="color:#888; font-size:0.8rem; margin-top:6px;">الكهف: ١٠٧</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-heart"></i> ﴿ آية عن رحمة الله ﴾</h3>
+                <div class="quran-text">﴿ وَرَحْمَتِي وَسِعَتْ كُلَّ شَيْءٍ ﴾</div>
+                <p style="color:#888; font-size:0.8rem; margin-top:6px;">الأعراف: ١٥٦</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-hourglass-half"></i> ﴿ آية عن الموت ﴾</h3>
+                <div class="quran-text">﴿ كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ ۗ وَإِنَّمَا تُوَفَّوْنَ أُجُورَكُمْ يَوْمَ الْقِيَامَةِ ﴾</div>
+                <p style="color:#888; font-size:0.8rem; margin-top:6px;">آل عمران: ١٨٥</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dua Banner -->
+    <div class="dua-banner">
+        <div class="dua-text">
+            <strong>اللهم ارحم موتانا وموتى المسلمين</strong><br>
+            اللهم ارحم موتانا وموتى المسلمين، اللهم من كان منهم محسناً فزد في حسناته، ومن كان منهم مسيئاً فتجاوز عن سيئاته<br>
+            اللهم يمن كتابه، ويسر حسابه، وثقل في الحسنات ميزانه، وثبت على الصراط أقدامه، وأسكنه في أعلى الجنات<br>
+            بجوار حبيبك ومصطفاك <strong>صلى الله عليه وسلم</strong>
+        </div>
+    </div>
+
+    <!-- ========== 2. مشغل صوتي ========== -->
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-headphones"></i>
+            <h2>استمع وأهدِ الثواب - تلاوات قرآنية كريمة</h2>
+        </div>
+        <div class="youtube-grid">
+            <div class="youtube-card" style="background: linear-gradient(135deg, #2d5a2d, #1a3a1a);">
+                <div style="padding: 20px;">
+                    <h3 style="color: #D4AF37; margin-bottom: 15px;">🎧 سورة الفاتحة</h3>
+                    <audio controls style="width: 100%; margin: 10px 0;">
+                        <source src="audio/fatiha.mp3" type="audio/mpeg">
+                        متصفحك لا يدعم مشغل الصوت
+                    </audio>
+                    <button class="btn btn-gold" onclick="downloadAudio('fatiha.mp3', 'سورة_الفاتحة.mp3')">
+                        <i class="fas fa-download"></i> تحميل
+                    </button>
+                </div>
+                <p>🎧 أهدِ الثواب للمرحوم أحمد الليثي</p>
+            </div>
+
+            <div class="youtube-card" style="background: linear-gradient(135deg, #2d5a2d, #1a3a1a);">
+                <div style="padding: 20px;">
+                    <h3 style="color: #D4AF37; margin-bottom: 15px;">🎧 سورة يس</h3>
+                    <audio controls style="width: 100%; margin: 10px 0;">
+                        <source src="audio/yaseen.mp3" type="audio/mpeg">
+                        متصفحك لا يدعم مشغل الصوت
+                    </audio>
+                    <button class="btn btn-gold" onclick="downloadAudio('yaseen.mp3', 'سورة_يس.mp3')">
+                        <i class="fas fa-download"></i> تحميل
+                    </button>
+                </div>
+                <p>🎧 رحمة وبركة للمرحوم أحمد الليثي</p>
+            </div>
+
+            <div class="youtube-card" style="background: linear-gradient(135deg, #2d5a2d, #1a3a1a);">
+                <div style="padding: 20px;">
+                    <h3 style="color: #D4AF37; margin-bottom: 15px;">🎧 سورة الملك</h3>
+                    <audio controls style="width: 100%; margin: 10px 0;">
+                        <source src="audio/mulk.mp3" type="audio/mpeg">
+                        متصفحك لا يدعم مشغل الصوت
+                    </audio>
+                    <button class="btn btn-gold" onclick="downloadAudio('mulk.mp3', 'سورة_الملك.mp3')">
+                        <i class="fas fa-download"></i> تحميل
+                    </button>
+                </div>
+                <p>🎧 تلاوة خاشعة للمرحوم</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dua Ornament -->
+    <div class="dua-ornament">
+        <i class="fas fa-praying-hands"></i>
+        <div class="dua-text">
+            <strong>اللهم آنس وحشته</strong> — اللهم نور قبره، اللهم اجعله في ضيافتك يوم القيامة، اللهم ارحمه واغفر له وتجاوز عن سيئاته<br>
+            <em style="color:#6AA84F; font-size:0.95rem;">صلى الله على نبينا محمد وعلى آله وصحبه وسلم</em>
+        </div>
+    </div>
+
+    <!-- ========== 3. المسبحة ========== -->
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-circle-notch"></i>
+            <h2>المسبحة التفاعلية</h2>
+        </div>
+        <div class="tasbeeh-horizontal" id="tasbeehContainer"></div>
+        <div class="reset-btn-container">
+            <button class="btn btn-gold" id="resetAllBtn"><i class="fas fa-redo"></i> إعادة ضبط جميع العدادات</button>
+        </div>
+    </div>
+
+    <!-- Dua Banner -->
+    <div class="dua-banner">
+        <div class="dua-text">
+            <strong>اللهم اجعل قبره روضة من رياض الجنة</strong><br>
+            ولا تجعله حفرة من حفر النار، اللهم افسح له في قبره مد بصره، وافرش قبره من فراش الجنة<br>
+            اللهم أعذه من عذاب القبر، وجفاف الأرض على جنبيه، واملأ قبره بالرضا والنور، والفسحة والسرور<br>
+            <strong>اللهم صلِّ وسلم على نبينا محمد</strong>
+        </div>
+    </div>
+
+    <!-- ========== 4. الأحاديث النبوية ========== -->
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-book-open"></i>
+            <h2>أحاديث نبوية عن الموت والدعاء للميت</h2>
+        </div>
+        <div class="grid-2">
+            <div class="hadith-card">
+                <h3><i class="fas fa-calendar-alt"></i> فضل من مات يوم الجمعة</h3>
+                <div class="hadith-text">
+                    «مَا مِنْ مُسْلِمٍ يَمُوتُ يَوْمَ الْجُمُعَةِ أَوْ لَيْلَةَ الْجُمُعَةِ إِلَّا وَقَاهُ اللَّهُ فِتْنَةَ الْقَبْرِ»
+                </div>
+                <span class="hadith-source">رواه أحمد والترمذي</span>
+            </div>
+            <div class="hadith-card">
+                <h3><i class="fas fa-baby"></i> ولد صالح يدعو له</h3>
+                <div class="hadith-text">
+                    «إِذَا مَاتَ الْإِنْسَانُ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ: صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ»
+                </div>
+                <span class="hadith-source">رواه مسلم</span>
+            </div>
+            <div class="hadith-card">
+                <h3><i class="fas fa-shield-alt"></i> الشهداء الخمسة</h3>
+                <div class="hadith-text">
+                    «الشُّهَدَاءُ خَمْسَةٌ: المَطْعُونُ، وَالمَبْطُونُ، وَالغَرِيقُ، وَصَاحِبُ الهَدْمِ، وَالشَّهِيدُ فِي سَبِيلِ اللَّهِ»
+                </div>
+                <span class="hadith-source">رواه البخاري ومسلم</span>
+            </div>
+            <div class="hadith-card">
+                <h3><i class="fas fa-moon"></i> فضل من مات في رمضان</h3>
+                <div class="hadith-text">
+                    «مَنْ مَاتَ فِي رَمَضَانَ دَخَلَ الْجَنَّةَ»
+                </div>
+                <span class="hadith-source">رواه البيهقي وحسنه الألباني</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dua Ornament -->
+    <div class="dua-ornament">
+        <i class="fas fa-praying-hands"></i>
+        <div class="dua-text">
+            <strong>اللهم ارفع درجته في المهديين</strong> — اللهم اخلفه في عقبه في الغابرين، واغفر لنا وله يا رب العالمين<br>
+            <em style="color:#6AA84F; font-size:0.95rem;">اللهم صلِّ على محمد وعلى آل محمد كما صليت على إبراهيم وعلى آل إبراهيم</em>
+        </div>
+    </div>
+
+    <!-- ========== 5. أدعية الصلاة على الميت ========== -->
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-pray"></i>
+            <h2>أدعية صلاة الجنازة</h2>
+        </div>
+        <div class="salah-grid">
+            <div class="salah-card">
+                <h3>الدعاء المأثور في صلاة الجنازة</h3>
+                <p>اللَّهُمَّ اغْفِرْ لَهُ وَارْحَمْهُ، وَعَافِهِ وَاعْفُ عَنْهُ، وَأَكْرِمْ نُزُلَهُ، وَوَسِّعْ مَدْخَلَهُ، وَاغْسِلْهُ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ</p>
+            </div>
+            <div class="salah-card">
+                <h3>دعاء تنظيف الذنوب</h3>
+                <p>وَنَقِّهِ مِنَ الْخَطَايَا كَمَا نَقَّيْتَ الثَّوْبَ الْأَبْيَضَ مِنَ الدَّنَسِ، وَأَبْدِلْهُ دَارًا خَيْرًا مِنْ دَارِهِ، وَأَهْلًا خَيْرًا مِنْ أَهْلِهِ</p>
+            </div>
+            <div class="salah-card">
+                <h3>دعاء الجنة والنور</h3>
+                <p>وَأَدْخِلْهُ الْجَنَّةَ، وَأَعِذْهُ مِنْ عَذَابِ الْقَبْرِ وَمِنْ عَذَابِ النَّارِ، وَافْسَحْ لَهُ فِي قَبْرِهِ وَنَوِّرْ لَهُ فِيهِ</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 6. معرض الصور ========== -->
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-images"></i>
+            <h2>معرض الصور - أذكار الصباح والمساء وما بعد الصلاة</h2>
+        </div>
+
+        <div class="gallery-free">
+
+            <div class="gallery-free-item">
+                <span class="img-label">📿 أذكار الصباح</span>
+                <img src="images/sabah.jpeg" alt="أذكار الصباح" onclick="showLightbox(this)">
+                <button class="btn-download" onclick="downloadFile('images/sabah.jpeg', 'أذكار_الصباح.jpeg')">
+                    <i class="fas fa-download"></i> تحميل
+                </button>
+            </div>
+
+            <div class="gallery-free-item">
+                <span class="img-label">🌙 أذكار المساء</span>
+                <img src="images/msaaa.jpeg" alt="أذكار المساء" onclick="showLightbox(this)">
+                <button class="btn-download" onclick="downloadFile('images/msaaa.jpeg', 'أذكار_المساء.jpeg')">
+                    <i class="fas fa-download"></i> تحميل
+                </button>
+            </div>
+
+            <div class="gallery-free-item">
+                <span class="img-label">🌅 أذكار الصباح والمساء</span>
+                <img src="images/morning_evening_adhkar.jpeg" alt="أذكار الصباح والمساء" onclick="showLightbox(this)">
+                <button class="btn-download" onclick="downloadFile('images/morning_evening_adhkar.jpeg', 'أذكار_الصباح_والمساء.jpeg')">
+                    <i class="fas fa-download"></i> تحميل
+                </button>
+            </div>
+
+            <div class="gallery-free-item">
+                <span class="img-label">💤 أذكار النوم</span>
+                <img src="images/noam.jpeg" alt="أذكار النوم" onclick="showLightbox(this)">
+                <button class="btn-download" onclick="downloadFile('images/noam.jpeg', 'أذكار_النوم.jpeg')">
+                    <i class="fas fa-download"></i> تحميل
+                </button>
+            </div>
+
+            <div class="gallery-free-item">
+                <span class="img-label">🕌 أذكار بعد الصلاة</span>
+                <img src="images/pafter.jpeg" alt="أذكار بعد الصلاة" onclick="showLightbox(this)">
+                <button class="btn-download" onclick="downloadFile('images/pafter.jpeg', 'أذكار_بعد_الصلاة.jpeg')">
+                    <i class="fas fa-download"></i> تحميل
+                </button>
+            </div>
+
+            <div class="gallery-free-item">
+                <span class="img-label">دعاء للميت</span>
+                <img src="images/moat.jpeg" alt="دعاء للميت" onclick="showLightbox(this)">
+                <button class="btn-download" onclick="downloadFile('images/moat.jpeg', 'دعاء_للميت.jpeg')">
+                    <i class="fas fa-download"></i> تحميل
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Dua Ornament -->
+    <div class="dua-ornament">
+        <i class="fas fa-praying-hands"></i>
+        <div class="dua-text">
+            <strong>اللهم اجمعنا به في جنات النعيم</strong> — اللهم ارحم من فارقنا من الأحبة، وأسكنهم الفردوس الأعلى بلا حساب ولا عذاب<br>
+            <em style="color:#6AA84F; font-size:0.95rem;">صلى الله على سيدنا محمد وعلى آله وصحبه وسلم تسليماً كثيراً</em>
+        </div>
+    </div>
+
+    <!-- ========== 7. أدعية إضافية ========== -->
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h2>أدعية للمرحوم أحمد محمد طاهر الليثي</h2>
+        </div>
+        <div class="grid-3" id="duasGrid"></div>
+    </div>
+
+    <!-- ========== 8. رسائل العزاء ========== -->
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-envelope-open-heart"></i>
+            <h2>رسائل العزاء والمواساة</h2>
+        </div>
+        <div class="grid-2">
+            <div class="card">
+                <h3><i class="fas fa-heart"></i> رسالة عزاء للأهل</h3>
+                <p style="line-height:2; margin-bottom:12px; font-size:1rem;">إنا لله وإنا إليه راجعون — عظّم الله أجركم وأحسن عزاءكم وغفر لميتكم. اللهم اغفر له وارحمه وأسكنه الفردوس الأعلى.</p>
+                <button class="btn btn-primary" onclick="shareText('إنا لله وإنا إليه راجعون — عظّم الله أجركم وأحسن عزاءكم وغفر لميتكم. اللهم اغفر للمرحوم أحمد الليثي وارحمه.')"><i class="fab fa-whatsapp"></i> مشاركة</button>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-star"></i> رسالة تذكر بالدعاء</h3>
+                <p style="line-height:2; margin-bottom:12px; font-size:1rem;">تذكّر المرحوم أحمد الليثي بدعوة صالحة — اللهم اغفر له وارحمه وأدخله الجنة. كل دعاء له صدقة جارية.</p>
+                <button class="btn btn-primary" onclick="shareText('تذكّر المرحوم أحمد محمد طاهر الليثي بدعوة صالحة — اللهم اغفر له وارحمه وأدخله الجنة بغير حساب.')"><i class="fab fa-whatsapp"></i> مشاركة</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Dua Banner -->
+    <div class="dua-banner">
+        <div class="dua-text">
+            <strong>اللهم تقبل منا، إنك أنت السميع العليم</strong><br>
+            واجعل هذا العمل صدقة جارية على روح المرحوم أحمد محمد طاهر الليثي<br>
+            واغفر له وارحمه وأدخله فسيح جناتك<br>
+            <strong>اللهم صلِّ على نبينا محمد وعلى آله وصحبه أجمعين</strong>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <i class="fas fa-heart" style="color: #6AA84F;"></i> صدقة جارية على روح الفقيد أحمد محمد طاهر أحمد الليثي<br>
+    اللهم اغفر له وارحمه، وأدخله الجنة بغير حساب، واجمعنا به في مستقر رحمتك<br>
+    <em style="color:#6AA84F;">اللهم صلِّ على محمد وعلى آل محمد كما صليت على إبراهيم وعلى آل إبراهيم إنك حميد مجيد</em><br>
+    <small>﴿ وَمَا تُقَدِّمُوا لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ اللَّهِ ﴾</small>
+</footer>
+
+<script>
+    // ===================== الأذكار =====================
+    const dhikrItems = [
+        { name: "اللهم ارحمه", count: 33 },
+        { name: "اللهم اغفر له", count: 33 },
+        { name: "الهم اعف عنه", count: 33 },
+        { name: "اللهم ارفع درجاته", count: 33 },
+        { name: "أستغفر الله وأتوب إليه", count: 33 },
+        { name: "سبحان الله عدد خلقه", count: 33 },
+        { name: "أستغفر الله العظيم", count: 33 },
+        { name: "سبحان الله", count: 33 },
+        { name: "الحمد لله", count: 33 },
+        { name: "لا إله إلا الله", count: 33 },
+        { name: "الله أكبر", count: 33 },
+        { name: "سبحان الله وبحمده", count: 33 },
+        { name: "سبحان الله العظيم", count: 33 },
+        { name: "لا حول ولا قوة إلا بالله", count: 33 },
+    ];
+
+    let counters = {};
+
+    function initCounters() {
+        dhikrItems.forEach((_, i) => { counters[i] = { remaining: 33 }; });
+    }
+
+    function renderTasbeeh() {
+        const container = document.getElementById('tasbeehContainer');
+        container.innerHTML = '';
+        dhikrItems.forEach((item, index) => {
+            const rect = document.createElement('div');
+            rect.className = 'tasbeeh-rect';
+            rect.innerHTML = `
+                <div class="dhikr-name">${item.name}</div>
+                <div class="count-number" id="count-${index}">${counters[index].remaining}</div>
+                <div class="remaining-text" id="remaining-${index}">تبقى: ${counters[index].remaining}</div>
+            `;
+            rect.addEventListener('click', () => handleTasbeehClick(index));
+            container.appendChild(rect);
+        });
+    }
+
+    function updateCardDisplay(index) {
+        const countDiv = document.getElementById('count-' + index);
+        const remainingDiv = document.getElementById('remaining-' + index);
+        if (countDiv) countDiv.innerText = counters[index].remaining;
+        if (remainingDiv) remainingDiv.innerText = 'تبقى: ' + counters[index].remaining;
+    }
+
+    function showNotification(msg) {
+        const notif = document.createElement('div');
+        notif.className = 'notification';
+        notif.innerHTML = msg;
+        document.body.appendChild(notif);
+        setTimeout(function() { if (notif.parentNode) notif.remove(); }, 2600);
+    }
+
+    function handleTasbeehClick(index) {
+        if (counters[index].remaining > 0) {
+            counters[index].remaining--;
+            updateCardDisplay(index);
+            if (counters[index].remaining === 0) {
+                showNotification('🎉 أكملت ' + dhikrItems[index].name + ' 33 مرة!');
+            }
+        }
+    }
+
+    function resetAllCounters() {
+        initCounters();
+        renderTasbeeh();
+        showNotification('✅ تم إعادة ضبط جميع العدادات');
+    }
+
+    // ===================== الأدعية الإضافية =====================
+    const extraDuas = [
+        { title: "دعاء الرحمة والمغفرة", text: "اللَّهُمَّ اغْفِرْ لَهُ وَارْحَمْهُ، وَعَافِهِ وَاعْفُ عَنْهُ، وَأَكْرِمْ نُزُلَهُ، وَوَسِّعْ مَدْخَلَهُ" },
+        { title: "دعاء توسيع القبر", text: "اللَّهُمَّ افْسَحْ لَهُ فِي قَبْرِهِ مَدَّ بَصَرِهِ، وَافْرُشْ قَبْرَهُ مِنْ فَرَاشِ الْجَنَّةِ" },
+        { title: "دعاء النور والضياء", text: "اللَّهُمَّ نَوِّرْ قَبْرَهُ، وَأَنِرْهُ فِي ظُلْمَةِ الْقَبْرِ، وَاجْعَلْ قَبْرَهُ رَوْضَةً مِنْ رِيَاضِ الْجَنَّةِ" },
+        { title: "دعاء الثبات", text: "اللَّهُمَّ ثَبِّتْهُ بِالْقَوْلِ الثَّابِتِ فِي الْحَيَاةِ الدُّنْيَا وَفِي الْآخِرَةِ" },
+        { title: "دعاء رفع الدرجات", text: "اللَّهُمَّ ارْفَعْ دَرَجَتَهُ فِي الْمَهْدِيِّينَ، وَاخْلُفْهُ فِي عَقِبِهِ فِي الْغَابِرِينَ" },
+        { title: "دعاء الجنة", text: "اللَّهُمَّ أَدْخِلْهُ جَنَّاتِ عَدْنٍ الَّتِي وَعَدْتَ عِبَادَكَ الصَّالِحِينَ" }
+    ];
+
+    function renderDuas() {
+        const container = document.getElementById('duasGrid');
+        container.innerHTML = extraDuas.map(function(d) {
+            return '<div class="card">' +
+                '<h3><i class="fas fa-hand-holding-heart"></i> ' + d.title + '</h3>' +
+                '<p style="line-height:2; margin-bottom:12px;">' + d.text + '</p>' +
+                '<button class="btn" onclick="copyText(\'' + d.text.replace(/'/g, "\\'") + '\')"><i class="fas fa-copy"></i> نسخ</button>' +
+                '<button class="btn btn-primary" onclick="shareText(\'' + d.text.replace(/'/g, "\\'") + '\')"><i class="fab fa-whatsapp"></i> مشاركة</button>' +
+                '</div>';
+        }).join('');
+    }
+
+    // ===================== دالة التحميل الموحدة (صور وصوتيات) =====================
+    function downloadFile(filePath, fileName) {
+     var link = document.createElement('a');
+     link.href = filePath;
+     link.download = fileName;
+     link.target = '_blank';
+     document.body.appendChild(link);
+     link.click();
+     document.body.removeChild(link);
+     showNotification('✅ جاري تحميل ' + fileName);
+    }
+ 
+    // ===================== تحميل الصوتيات =====================
+    function downloadAudio(filename, displayName) {
+        downloadFile('audio/' + filename, displayName);
+    }
+
+    // ===================== عرض الصورة بحجم كبير =====================
+    function showLightbox(imgElement) {
+        var modal = document.createElement('div');
+        modal.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:10000;display:flex;flex-direction:column;justify-content:center;align-items:center;';
+
+        var img = document.createElement('img');
+        img.src = imgElement.src;
+        img.style.cssText = 'max-width:90%;max-height:80%;border-radius:10px;box-shadow:0 0 20px rgba(0,0,0,0.5);';
+
+        var downloadBtn = document.createElement('button');
+        downloadBtn.innerHTML = '<i class="fas fa-download"></i> تحميل';
+        downloadBtn.style.cssText = 'margin-top:20px;padding:10px 25px;background:#D4AF37;color:#2c3e2b;border:none;border-radius:30px;cursor:pointer;font-family:Tajawal,sans-serif;font-size:1rem;';
+
+        var imgSrc = imgElement.src;
+        var imgAlt = imgElement.alt || 'صورة';
+        // استخراج المسار النسبي من الـ src الكامل
+        var relativePath = imgSrc.replace(window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/'), '').replace(window.location.origin + '/', '');
+
+        downloadBtn.onclick = function(e) {
+            e.stopPropagation();
+            downloadFile(relativePath, imgAlt + '.jpeg');
+        };
+
+        var closeBtn = document.createElement('button');
+        closeBtn.innerHTML = '<i class="fas fa-times"></i> إغلاق';
+        closeBtn.style.cssText = 'margin-top:10px;padding:8px 20px;background:rgba(255,255,255,0.2);color:white;border:none;border-radius:30px;cursor:pointer;font-family:Tajawal,sans-serif;font-size:0.95rem;';
+        closeBtn.onclick = function() { modal.remove(); };
+
+        modal.appendChild(img);
+        modal.appendChild(downloadBtn);
+        modal.appendChild(closeBtn);
+        modal.onclick = function(e) { if (e.target === modal) modal.remove(); };
+        document.body.appendChild(modal);
+    }
+
+    // ===================== دوال مساعدة =====================
+    function copyText(text) {
+        navigator.clipboard.writeText(text).then(function() { showNotification('✅ تم نسخ النص'); });
+    }
+    function shareText(text) {
+        window.open('https://wa.me/?text=' + encodeURIComponent(text + '\n- صدقة جارية للمرحوم أحمد الليثي'), '_blank');
+    }
+    function shareSite() {
+        window.open('https://wa.me/?text=' + encodeURIComponent('موقع Sadaqa.site صدقة جارية على روح المرحوم أحمد محمد طاهر الليثي - أدعية وأذكار: https://sadaqa.site'), '_blank');
+    }
+    function copyLink() {
+        navigator.clipboard.writeText('https://sadaqa.site').then(function() { showNotification('✅ تم نسخ رابط الموقع'); });
+    }
+
+    // تهيئة
+    initCounters();
+    renderTasbeeh();
+    renderDuas();
+    document.getElementById('resetAllBtn').addEventListener('click', resetAllCounters);
+</script>
+</body>
+</html>
